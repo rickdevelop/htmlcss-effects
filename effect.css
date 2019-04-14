@@ -1,0 +1,119 @@
+.ex-1-square {
+  transition: background-color 3s;
+}
+.ex-1-square:hover {
+  background-color: red;
+}
+.ex-2-square {
+  max-width: 100%;
+  transition: width 2s;
+}
+.ex-2-square:active {
+  width: 100%;
+}
+.ex-3-square {
+  transition: border-radius 2s;
+}
+.ex-3-square:hover {
+  border-radius: 70%;
+}
+.ex-4-square {
+  transition: opacity 2s;
+}
+.ex-4-square:hover {
+  opacity: 0;
+}
+.ex-5-square {
+  transition: 2s;
+}
+.ex-5-square:hover {
+  transform: scale(3);
+}
+.ex-5-square:active {
+  transform: scale(0.5);
+}
+.ex-6-img:hover {
+  filter: grayscale(1);
+}
+.ex-7-img {
+  transition: 3s;
+}
+.ex-7-img:hover {
+  filter: grayscale(60%);
+  filter: sepia(50%);
+}
+.ex-8-img {
+  transition: 2s;
+}
+.ex-8-img:hover {
+  filter: grayscale(50%);
+  filter: sepia(70%);
+  border-radius: 20px;
+}
+.ex-9-img {
+  transition: 3s;
+}
+.ex-9-img:hover {
+  filter: grayscale(50%);
+  filter: sepia(60%);
+  border-radius: 20px;
+  transform: scale(1.5);
+}
+.ex-10-icon {
+  animation: circle-rotate 2s linear infinite;
+}
+@keyframes circle-rotate {
+  0% {transform: rotate(0);}
+  25% {transform: rotate(90deg);}
+  50% {transform: rotate(180deg);}
+  75% {transform: rotate(270deg);}
+  100% {transform: rotate(360deg);}
+}
+.ex-11-icon:hover {
+  animation: rotate-and-retourn 2s linear infinite ;
+}
+@keyframes rotate-and-retourn {
+  0% {transform: rotate(0);}
+  25% {transform: rotate(90deg);}
+  50% {transform: rotate(180deg);}
+  75% {transform: rotate(270deg);}
+  100% {transform: rotate(0deg);}
+}
+.ex-12-button:hover .ex-12-top-white {
+  animation: top 3s linear infinite;
+}
+.ex-12-button:hover .ex-12-bottom-white {
+  animation: bottom 3s linear infinite;
+}
+@keyframes top {
+  0% {transform: translateX(0);}
+  50% {transform: translateX(160%);}
+  100% {transform: translateX(0%);}
+}
+@keyframes bottom {
+  0% {transform: translateX(0);}
+  50% {transform: translateX(-160%);}
+  100% {transform: translateX(0%);}
+}
+.ex-13-button:hover .ex-13-top-white {
+  animation: top-rotate 3s ease-out 1;
+}
+.ex-13-button:hover .ex-13-bottom-white {
+  animation: bottom-rotate 3s linear 1;
+}
+@keyframes top-rotate {
+  0% {transform: translate(0,0);}
+  25% {transform: translate(200%,0);}
+  50% {transform: translate(200%,300%);}
+  75% {transform: translate(-70%,300%);}
+  87% {transform: translate(-70%,0);}
+  100% {transform: translate(0,0);}
+}
+@keyframes bottom-rotate {
+  0% {transform: translate(0,0);}
+  25% {transform: translate(-195%,0);}
+  50% {transform: translate(-195%,-300%);}
+  75% {transform: translate(160%,-300%);}
+    87% {transform: translate(70%,0);}
+  100% {transform: translate(0,0);}
+}
